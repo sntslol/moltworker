@@ -67,6 +67,14 @@
   "browser": {
     "binding": "BROWSER",
   },
+
+  // Non-secret environment variables
+  "vars": {
+    "CF_AI_GATEWAY_ACCOUNT_ID": "f89716aa4f650398d810939f16f0d281",
+    "CF_AI_GATEWAY_GATEWAY_ID": "openclaw",
+    "DEV_MODE": "true",
+  },
+
   // Note: CF_ACCOUNT_ID should be set via `wrangler secret put CF_ACCOUNT_ID`
   // Secrets to configure via `wrangler secret put`:
   //
@@ -82,9 +90,9 @@
   //   - AI_GATEWAY_BASE_URL: Gateway endpoint URL
   //
   // Authentication:
-  // - MOLTBOT_GATEWAY_TOKEN: Token to protect gateway access
-  // - CF_ACCESS_TEAM_DOMAIN: Cloudflare Access team domain
-  // - CF_ACCESS_AUD: Cloudflare Access application audience
+  //   - MOLTBOT_GATEWAY_TOKEN: Token to protect gateway access
+  //   - CF_ACCESS_TEAM_DOMAIN: Cloudflare Access team domain
+  //   - CF_ACCESS_AUD: Cloudflare Access application audience
   //
   // Chat channels (optional):
   // - TELEGRAM_BOT_TOKEN, DISCORD_BOT_TOKEN, SLACK_BOT_TOKEN, SLACK_APP_TOKEN
